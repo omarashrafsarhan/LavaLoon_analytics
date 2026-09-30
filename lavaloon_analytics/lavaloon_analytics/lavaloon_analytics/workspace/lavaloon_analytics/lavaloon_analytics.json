@@ -1,0 +1,140 @@
+{
+ "charts": [],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"LavaLoon Analytics\", \"col\": 12}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Data\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Targets & Reports\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}]",
+ "creation": "2026-09-28 00:00:00",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dashboard",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "LavaLoon Analytics",
+ "modified": "2026-09-28 00:00:00",
+ "module": "LavaLoon Analytics",
+ "name": "LavaLoon Analytics",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "label": "Marketing Metric",
+   "link_to": "Marketing Metric",
+   "type": "DocType",
+   "color": "Grey"
+  },
+  {
+   "label": "Marketing Pacing",
+   "link_to": "Marketing Pacing",
+   "type": "Report",
+   "color": "Blue"
+  }
+ ],
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Data",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Marketing Metric",
+   "link_count": 0,
+   "link_to": "Marketing Metric",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Marketing Upload",
+   "link_count": 0,
+   "link_to": "Marketing Upload",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Marketing Demographic",
+   "link_count": 0,
+   "link_to": "Marketing Demographic",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Targets & Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Marketing Target",
+   "link_count": 0,
+   "link_to": "Marketing Target",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Marketing Pacing",
+   "link_count": 0,
+   "link_to": "Marketing Pacing",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Marketing Company",
+   "link_count": 0,
+   "link_to": "Marketing Company",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "LavaLoon Analytics Settings",
+   "link_count": 0,
+   "link_to": "LavaLoon Analytics Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ]
+}

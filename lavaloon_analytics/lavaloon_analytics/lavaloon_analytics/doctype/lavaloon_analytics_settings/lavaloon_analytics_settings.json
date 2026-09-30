@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "creation": "2026-09-28 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "crm_sync_enabled",
+  "sync_company",
+  "sb1",
+  "lead_doctype",
+  "deal_doctype",
+  "deal_won_status",
+  "cb1",
+  "deal_status_field",
+  "revenue_field",
+  "last_sync"
+ ],
+ "fields": [
+  {
+   "fieldname": "crm_sync_enabled",
+   "fieldtype": "Check",
+   "label": "Enable Frappe CRM Sync"
+  },
+  {
+   "fieldname": "sync_company",
+   "fieldtype": "Link",
+   "label": "Map CRM data to Company",
+   "options": "Marketing Company",
+   "description": "Which Marketing Company the CRM leads/deals belong to"
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break",
+   "label": "Field mapping (adjust to your Frappe CRM)"
+  },
+  {
+   "fieldname": "lead_doctype",
+   "fieldtype": "Data",
+   "label": "Lead DocType",
+   "default": "CRM Lead"
+  },
+  {
+   "fieldname": "deal_doctype",
+   "fieldtype": "Data",
+   "label": "Deal DocType",
+   "default": "CRM Deal"
+  },
+  {
+   "fieldname": "deal_won_status",
+   "fieldtype": "Data",
+   "label": "Deal 'Won' status value",
+   "default": "Won"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deal_status_field",
+   "fieldtype": "Data",
+   "label": "Deal status field",
+   "default": "status"
+  },
+  {
+   "fieldname": "revenue_field",
+   "fieldtype": "Data",
+   "label": "Deal revenue field",
+   "default": "deal_value"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-09-28 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "LavaLoon Analytics",
+ "name": "LavaLoon Analytics Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Analytics Manager",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Analytics Analyst",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Analytics Viewer",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 0,
+ "issingle": 1
+}

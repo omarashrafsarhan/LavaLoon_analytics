@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lavaloon_analytics"
+authors = [{name = "LavaLoon", email = "info@lavaloon.com"}]
+description = "LavaLoon Analytics — multi-brand social & content analytics for Frappe/ERPNext"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = ["openpyxl"]
+
+[tool.flit.module]
+name = "lavaloon_analytics"
