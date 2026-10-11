@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "creation": "2026-09-28 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "period_type",
+  "fiscal_year",
+  "month",
+  "cb1",
+  "metric_name",
+  "target_value",
+  "is_auto_suggested",
+  "metric_kind",
+  "distribution",
+  "baseline_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Marketing Company",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "period_type",
+   "fieldtype": "Select",
+   "label": "Period Type",
+   "options": "Annual\nMonthly",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Int",
+   "label": "Month (1-12)",
+   "description": "Blank for Annual"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metric_name",
+   "fieldtype": "Data",
+   "label": "Metric Name",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "target_value",
+   "fieldtype": "Float",
+   "label": "Target Value",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "is_auto_suggested",
+   "fieldtype": "Check",
+   "label": "Auto-suggested (from annual)"
+  },
+  {
+   "fieldname": "metric_kind",
+   "fieldtype": "Select",
+   "label": "Metric Kind",
+   "options": "Flow\nRate\nScore",
+   "description": "Flow accumulates; Rate is a standing % ; Score climbs to a target."
+  },
+  {
+   "fieldname": "distribution",
+   "fieldtype": "Select",
+   "label": "Distribution",
+   "options": "even\nramp\nflat\nmanual",
+   "description": "How the monthly target is derived from the annual: even = annual/12; ramp = baseline->annual; flat = annual every month; manual = entered."
+  },
+  {
+   "fieldname": "baseline_value",
+   "fieldtype": "Float",
+   "label": "Baseline (ramp start)"
+  }
+ ],
+ "links": [],
+ "modified": "2026-09-28 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "LavaLoon Analytics",
+ "name": "Marketing Target",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Analytics Manager",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Analytics Analyst",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Analytics Viewer",
+   "read": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 0,
+ "issingle": 0,
+ "autoname": "hash"
+}
